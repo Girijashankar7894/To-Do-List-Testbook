@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+#container {
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    width: 70%;
+    /* margin: auto; */
+    margin: 5vh auto;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-add {
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: 40% 10%;
+    place-content: center;
+    gap: 10px;
+}
+
+.input-add > input, .input-add > button {
+    font-size: large;
+}
+
+.btn {
+    padding: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 2px solid blueviolet;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+button:active {
+    scale: 0.9;
+}
+
+
+#database {
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    height: 60vh;
+    overflow: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.data-list {
+    border: 2px solid blueviolet;
+    max-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    
+}
+
+
+
+/* small screen */
+@media screen and (max-width: 770px) {
+    #container {
+        width: 80%;
+    }
+
+    .input-add {
+        grid-template-columns: 60%;
+    }
+}
+
+
+/* x-small screen */
+@media screen and (max-width: 500px) {
+    #container {
+        width: 90%;
+    }
+
+    .input-add {
+        grid-template-columns: 80%;
+    }
+}
